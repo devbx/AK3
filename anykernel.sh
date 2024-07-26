@@ -12,9 +12,6 @@ do.cleanup=1
 do.cleanuponabort=0
 device.name1=earth
 device.name2=aether
-device.name3=Earth
-device.name4=Aether
-device.name5=
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -23,7 +20,7 @@ supported.patchlevels=
 block=/dev/block/by-name/boot;
 is_slot_device=1;
 ramdisk_compression=auto;
-
+patch_vbmeta_flag=auto;
 
 ## AnyKernel methods (DO NOT CHANGE)
 # import patching functions/variables - see for reference
@@ -45,3 +42,4 @@ dump_boot;
 
 write_boot;
 ## end install
+
